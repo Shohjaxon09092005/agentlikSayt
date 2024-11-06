@@ -1,0 +1,106 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.city-select {
+  max-width: 200px;
+  font-size: var(--font-md);
+  padding: 1rem var(--gap);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.179);
+}
+
+.date {
+  font-size: 14px;
+  margin-top: 10px;
+  opacity: 0.6;
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+}
+
+.temperature {
+  font-size: 2em;
+  color: #3498db;
+}
+
+.weather-icon {
+  margin-left: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+.banner {
+  margin: 20px 0;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+.exchange-rates {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  border: 1px solid #143797;
+  border-left-width: 5px;
+}
+
+.exchange_div {
+  padding: 25px 50px 25px 10px;
+}
+
+
+
+.cbu-link {
+  font-size: 0.9em;
+  color: #3498db;
+  text-decoration: underline;
+}
+
+.rates_money {
+  padding: 25px 10px 25px 10px;
+  background-color: #143797;
+  color: #fff;
+
+}
+.exchange-rates p{
+  font-size: var(--font-sm);
+  font-weight: 600;
+  padding-bottom: 4px;
+  color: #143797;
+}
+.exchange-rates h4{
+  font-size: var(--font-sm);
+  font-weight: 600;
+  padding-bottom: 4px;
+  color: #143797;
+}
+.exchange-rates a{
+  font-size: var(--font-sm);
+  font-weight: 600;
+  padding-bottom: 4px;
+}
+.rates_money div {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  padding-bottom: 4px;
+
+}
+@media(max-width:1400px){
+  .top-bar{
+    flex-direction: column;
+  }
+}

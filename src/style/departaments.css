@@ -1,0 +1,40 @@
+.departaments .home_container{
+    /* display: block; */
+    width: 100%;
+}
+.departaments .accardion_text{
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: #003366;
+}
+.departaments .dep_text{
+    font-size: 24px;
+    color: black;
+    background-color: #fff;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px 6%;
+}
+.departaments .dep_text:hover{
+    background-color: aliceblue;
+}
+@media(max-width:800px){
+    .departaments .dep_text{
+        font-size: 18px;
+    }
+}
+@media(max-width:400px){
+    .profile-contact li{
+        font-size: 14px;
+    }
+    .departaments .accardion_text{
+
+        font-size: 20px;
+    }
+}

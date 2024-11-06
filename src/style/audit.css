@@ -1,0 +1,19 @@
+.audit .home_container{
+    /* box-shadow: 2px -2px 2px white; */
+    /* background-color: white; */
+    margin-top: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.audit h2{
+    font-size: 24px;
+    color: #003366;
+}
+@media(max-width:500px){
+    .audit h2{
+        font-size: 18px;
+    }
+    .document ol li{
+        font-size: 18px;
+    }
+}

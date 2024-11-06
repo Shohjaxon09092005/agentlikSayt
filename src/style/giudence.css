@@ -1,0 +1,48 @@
+.guidance .home_container {
+    display: block;
+}
+
+.guidance .text_guidance {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media(max-width:1200px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+        width: 60%;
+
+    }
+}
+
+@media(max-width:800px) {
+    .profile-card {
+        width: 70%;
+
+    }
+    .custom-popup{
+        width: 70%;
+    }
+}
+
+@media(max-width:600px) {
+    .profile-card {
+        width: 90%;
+        padding: 20px 0;
+
+    }
+    .custom-popup{
+        width: 90%;
+    }
+}
+@media(max-width:400px){
+    .guidance .text_guidance{
+        font-size: 20px;
+    }
+    .profile-info h2{
+        font-size: 18px;
+    }
+}

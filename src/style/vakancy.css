@@ -1,0 +1,88 @@
+.vacancy-container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  border-radius: 15px;
+}
+
+.vacancy-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vacancy-table th,
+.vacancy-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 18px;
+}
+
+.vacancy-table th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.additional-info {
+  margin-top: 20px;
+}
+
+.additional-info li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.additional-info a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.vakansy h2 {
+  font-size: 24px;
+  color: #003366;
+  text-align: center;
+}
+
+@media(max-width:800px) {
+
+  .vacancy-table th,
+  .vacancy-table td {
+    font-size: 16px;
+  }
+}
+
+@media(max-width:600px) {
+
+  .vacancy-table th,
+  .vacancy-table td {
+    font-size: 14px;
+  }
+}
+
+@media(max-width:500px) {
+
+  .vacancy-table th,
+  .vacancy-table td {
+    font-size: 12px;
+  }
+
+  .vakansy h2 {
+    font-size: 18px;
+  }
+}
+@media(max-width:450px) {
+
+  .vacancy-table th,
+  .vacancy-table td {
+    font-size: 10px;
+  }
+  .additional-info li{
+    font-size: 16px;
+  }
+}
+@media(max-width:380px) {
+
+  .vacancy-table th,
+  .vacancy-table td {
+    font-size: 8px;
+  }
+}

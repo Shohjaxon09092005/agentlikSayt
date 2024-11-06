@@ -1,0 +1,13 @@
+.line_about1 img{
+    width: 70%;
+    height: fit-content;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+}
+@media(max-width:600px){
+    .line_about1 img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,12 @@
+.reglament .home_container{
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 30px auto;
+    padding: 10px 50px;
+   
+}
+.reglament .home_container .jamoat_container a:hover{
+    text-decoration: underline;
+}

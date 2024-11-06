@@ -1,0 +1,19 @@
+.document ol li{
+    font-size: 20px;
+    padding-bottom: 5px;
+    border-bottom:1px solid rgba(0, 0, 0, 0.189) ;
+}
+.document h2{
+    font-size: 24px;
+    color: #003366;
+}
+@media(max-width:500px){
+    .document h2{
+        font-size: 18px
+    }
+}
+@media(max-width:400px){
+    .document ol li{
+        font-size: 18px;
+    }
+}

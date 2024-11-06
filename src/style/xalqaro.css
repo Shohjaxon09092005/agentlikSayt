@@ -1,0 +1,15 @@
+.new_container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.all_home .hover-link{
+    margin-top: 20px;
+    /* padding-left: 30px; */
+    font-size: 14px;
+}
+.all_home .hover_text{
+    
+    font-size: 14px;
+}

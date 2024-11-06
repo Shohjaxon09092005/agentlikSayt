@@ -1,0 +1,35 @@
+/* pagination.css */
+
+.pagination-nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination {
+    list-style: none;
+    display: inline-block;
+    padding-left: 0;
+}
+
+.page-item {
+    display: inline;
+    margin: 0 5px;
+}
+
+.page-link {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.page-link:hover {
+    background-color: #ddd;
+}

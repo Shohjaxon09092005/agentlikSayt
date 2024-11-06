@@ -1,0 +1,364 @@
+.header_service {
+  flex-grow: 1;
+  /* padding: 20px; */
+  transition: margin-left 0.3s ease-in-out;
+
+
+}
+.header_service .container_bar {
+  width: 100%;
+}
+.header_bottom_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+
+}
+
+.header_left {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  gap: 30px;
+}
+
+.header_left h3 {
+  font-size: var(--font-md);
+  text-transform: uppercase;
+  font-weight: 500;
+  max-width: 30rem;
+  line-height: 1.3;
+}
+
+.header_right_content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px 10px;
+  background-color: #d9d8d8;
+  margin-top: 30px;
+
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.147);
+  padding-right: 20px;
+}
+
+.navbar-item {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  color: black;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar-item .arrow {
+  margin-left: 5px;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger-icon span {
+  height: 3px;
+  width: 20px;
+  background-color: black;
+  margin: 2px 0;
+}
+
+
+/* Dropdown menu styling */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #003366;
+  /* Dark blue background */
+  color: white;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 4px;
+  display: inline-block;
+  /* Makes the width adjust to the content */
+  white-space: nowrap;
+  /* Set width to match your layout */
+  z-index: 1000;
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.dropdown-item:hover {
+  background-color: #004080;
+  /* Slightly lighter blue on hover */
+}
+
+.logo_yoshlar {
+  width: 120px;
+  height: 120px;
+  box-shadow: -2px -2px 5px #004080;
+  border-radius: 50%;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 40%;
+  text-align: center;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-content ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.modal-content ul li:hover {
+  background-color: #f0f0f0;
+}
+
+.header_service button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown-item a {
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.serveses .sidebar {
+  position: fixed;
+  /* width: 100%; Tashqi divning 100% o'lchamiga moslashadi */
+  /* height: 100%;
+  max-width: 100%;
+  max-height: 100%; */
+  inset: 0;
+  padding-bottom: 20px;
+  overflow: auto;
+}
+
+.serveses .sidebar2 {
+  opacity: 0;
+  transition: opacity 0.5s ease, height 0.5s ease;
+  display: none;
+  /* Boshlang'ich holatda yashirin */
+ 
+}
+
+.serveses .sidebar2_open {
+  display: block;
+  /* Birinchi qadam: block ko'rinishida */
+  opacity: 1;
+}
+
+.serveses .service_burger {
+  cursor: pointer;
+}
+.service_burger_media{
+  display: none;
+}
+.header_service{
+  padding: 0 10px;
+}
+.titleHeader{
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.titleHeader1{
+  font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+/* Media query for responsiveness */
+@media (max-width: 1100px) {
+  .navbar-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+  }
+
+  .burger-menu {
+    display: block;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header_left{
+    width: 80%;
+  }
+  .header_bottom_content{
+    gap: 20px;
+  }
+}
+@media(max-width:1500px){
+  .dropdown{
+    white-space:wrap;
+    left: 0;
+  } 
+  .dropdown-item a{
+    font-size: 13px;
+  }
+  .dropdown-item{
+    padding: 10px 5px 10px 10px
+  }
+}
+@media(max-width:700px){
+  .header_left h3{
+    font-size: 16px;
+  }
+  .modal-content{
+    width: 70%;
+  }
+}
+@media(max-width:640px){
+  .header_bottom_content{
+    flex-direction: column;
+  }
+  .header_left{
+    width: 100%;
+  }
+  .navbar-list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+  }
+  .home_news{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+}
+@media(max-width:600px){
+  .navbar-list {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+   
+  }
+  .service_burger_media{
+    display: block;
+    width: 60px;
+    height: 50px;
+  }
+  .navbar{
+    display: none;
+  }
+  .logo_yoshlar{
+    width: 80px;
+    height: 80px;
+  }
+  .header_left h3{
+    font-size: 14px;
+  }
+  .searchHeader{
+    width: 30px;
+    height: 30px;
+  }
+  .phoneHeader{
+    width: 30px;
+    height: 30px;
+  }
+  .titleHeader{
+    font-size: 10px;
+  }
+  .titleHeader1{
+    font-size: 14px;
+    font-weight: 800;
+  }
+  .side-menu{
+    display: none;
+  }
+  .main-content{
+    display: none;
+  }
+  .header_bottom_content{
+    position: sticky;
+    top: 0;
+   /* bottom: 0; */
+   /* margin-top: 150px; */
+   /* padding:10px; */
+   /* background-color: #f0f0f0; */
+  }
+}
+@media(max-width:400px){
+  .header_left h3{
+    font-size: 10px;
+  }
+  .header_left{
+    gap: 8px;
+    justify-content: flex-start;
+  }
+  .modal-content{
+    overflow-y: scroll;
+    margin-top: 100px;
+  }
+}

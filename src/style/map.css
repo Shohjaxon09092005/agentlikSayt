@@ -1,0 +1,144 @@
+.map_uzb .app-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.map_uzb {
+  margin-top: 40px;
+}
+
+
+
+
+.info-box h2 {
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  margin: 5px 0;
+}
+
+.map_uzb .card-container {
+  width: 40%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  text-align: left;
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.header p {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  text-transform: uppercase;
+}
+
+.header p:nth-of-type(2) {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.person-info {
+  line-height: 1.6;
+}
+
+.person-info h2 {
+  color: var(--color-text-primary);
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.person-info p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+  font-size: 20px;
+  padding-top: var(--gap-sm);
+}
+
+.person-info strong {
+  color: var(--color-text-primary);
+  font-size: 20px;
+  padding-top: var(--gap-sm);
+  padding-bottom: var(--gap-sm);
+  font-weight: 500;
+}
+
+.person-info p:last-child {
+  color: #0072CE;
+  font-weight: bold;
+}
+.person-info p:nth-of-type(5) {
+  text-align: center;
+}
+.person-info p a:hover{
+  text-decoration: underline;
+}
+@media(max-width:1200px){
+  
+  .map_uzb .app-container{
+   flex-direction: column;
+  }
+  .map_img{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    
+  }
+  .map_uzb .card-container{
+    width: 100%;
+  }
+}
+@media(max-width:600px){
+  .person-info h2{
+    font-size: 18px;
+  }
+  .person-info p{
+    font-size: 16px;
+  }
+  .header p{
+    font-size: 18px;
+  }
+  .map_img{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    
+  }
+
+}
+@media(max-width:400px){
+  .person-info h2{
+    font-size: 14px;
+  }
+  .person-info p{
+    font-size: 14px;
+  }
+  .person-info strong{
+    font-size: 15px;
+    display: block;
+
+  }
+  .header p{
+    font-size: 14px;
+  }
+  .map_uzb .card-container{
+    padding: 10px;
+  }
+  .person-info{
+    line-height: 1;
+  }
+}

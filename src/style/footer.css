@@ -1,0 +1,122 @@
+/* Asosiy stil */
+.text_p {
+    font-size: var(--font-sm);
+    margin-bottom: 20px;
+  }
+  
+  .all_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .fa {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .menu_tag:hover {
+    text-decoration: underline;
+  }
+  
+  .menu_tag {
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .footer{
+    position: relative;
+    z-index: 100;
+  }
+  
+  /* Katta ekranlar uchun (Laptop va katta monitorlar) */
+  @media (min-width: 1024px) {
+   
+  
+    .menu_list {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+  
+    .all_icon {
+      justify-content: space-between;
+      padding: 0 50px;
+    }
+  
+    .menu_tag {
+      font-size: 14px;
+    }
+  
+    .fa {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .text_p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Planshetlar uchun (768px - 1024px oralig'i) */
+  @media (min-width: 768px)  {
+  
+  
+    .menu_list {
+      flex-direction: row;
+      gap: 20px;
+    }
+  
+    .all_icon {
+      justify-content: space-evenly;
+    }
+  
+    .menu_tag {
+      font-size: 14px;
+    }
+  
+    .fa {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .text_p {
+      font-size: 13px;
+    }
+  }
+  
+  /* Kichik ekranlar (Mobil) uchun (0px - 768px oralig'i) */
+  @media (max-width: 767px) {
+    .footer {
+      text-align: center;
+    }
+  
+    .menu_list {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .all_icon {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .menu_tag {
+      font-size: 14px;
+    }
+  
+    .fa {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .text_p {
+      font-size: 12px;
+    }
+  }
+  @media(max-width:600px){
+    .footer{
+      position: relative;
+      padding-left: 0px;
+    }
+  }

@@ -1,0 +1,75 @@
+.app {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+ .link-card h2 {
+    color: #002F87;
+    margin-bottom: 20px;
+  }
+  .appLink .jamoat_container{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .link-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease;
+    width: 100%; /* Kenglikni to'liq qamrab olish */
+    max-width: 100%;
+  }
+  .link-card:hover{
+    border: 1px solid #002F87 ;
+    
+  }
+  .link_container{
+    width: 100%;
+  }
+  .link-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-container1 {
+    flex-shrink: 0;
+    /* width: 100%; */
+  }
+  
+ .link_container .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 15px;
+  }
+  
+ .link-card .content {
+    flex-grow: 1;   
+    margin-left: 15px;
+    text-transform: uppercase;
+  }
+ 
+ .link-card .content p {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  
+ .link-card .arrow-container {
+    flex-shrink: 0;
+  }
+  
+  .link-card .arrow {
+    font-size: 24px;
+    color: #999;
+    transition: color 0.3s ease;
+  }
+  
+  .link-card:hover .arrow {
+    color: #002F87;
+  }
+  

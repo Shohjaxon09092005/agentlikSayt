@@ -1,0 +1,79 @@
+.jamoat_container {
+    display: flex;
+  
+  }
+  .budjet h2{
+    font-size: 24px;
+    color: #003366;
+    text-align: center;
+  }
+  .custom-table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid #ddd;
+
+  }
+  .custom-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+ 
+  .custom-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+ 
+  
+  .custom-table td {
+    font-size: 18px;
+    vertical-align: middle;
+    color:black;
+    font-weight: 700;
+    
+  }
+  
+  .custom-table a.link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .custom-table td:first-child {
+    text-align: center;
+  }
+  .custom-table a.link:hover {
+    text-decoration: underline;
+  }
+  .jamoat .home_container{
+    display: block;
+  }
+  .jamoat h2{
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .custom-table th, 
+    .custom-table td {
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+   
+  }
+  @media(max-width:600px){
+    .jamoat_container{
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  

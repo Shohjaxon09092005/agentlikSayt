@@ -1,0 +1,70 @@
+.accordion-container {
+    width: 80%; /* Takes full available width */
+    margin: 20px auto; /* Center it */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevent overflow of content */
+}
+
+.accordion-item {
+    width: 100%; /* Ensure it doesn't expand */
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+}
+
+.accordion-title {
+    width: 100%; /* Fixed width */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+.accordion-title.active {
+    background-color: #0056b3;
+}
+
+.accordion-content {
+    width: 100%; /* Full width */
+    padding: 20px;
+    background-color: #f1f1f1;
+    display: none; /* Hidden by default */
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+}
+
+.accordion-content.show {
+    display: block;
+}
+
+.accordion-content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    word-wrap: break-word; /* Ensure long words break properly */
+}
+
+@media (max-width: 768px) {
+    .accordion-container {
+        padding: 10px;
+        max-width: 100%; /* Ensures the accordion adapts to small screens */
+    }
+
+    .accordion-title {
+        font-size: 16px;
+    }
+
+    .accordion-content {
+        font-size: 14px;
+    }
+}
